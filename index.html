@@ -1,180 +1,45 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="robots" content="noindex, nofollow" />
-  <title>RENCONTRES RAPPROCHÉES</title>
-
-  <!-- Google Fonts -->
-  <link
-    href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap"
-    rel="stylesheet"
-  />
-
-  <meta property="og:image" content="https://i.imgur.com/qnHpPMX.png" />
-  <link
-    rel="shortcut icon"
-    href="https://cdn.jmpcdn.com/assets/3420/images/2.ico"
-    type="image/x-icon"
-  />
-
-  <!-- Compteur de suivi (stronger114) -->
-  <script id="_wau1ca">
-    var _wau = _wau || [];
-    _wau.push(["dynamic", "Chimuelo", "1ca", "ffffffffffff", "small"]);
-  </script>
+  <script id="_wau1ca">var _wau = _wau || []; _wau.push(["dynamic", "chimuelo", "1ca", "ffffffffffff", "small"]);</script>
   <script async src="//waust.at/d.js"></script>
-
-  <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
-
-    html,
-    body {
-      height: 100%;
-      font-family: "Poppins", sans-serif;
-      color: #fff;
-      background-color: #000;
-      overflow-x: hidden;
-    }
-
-    #VideoBg {
-      position: fixed;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-      z-index: -1;
-    }
-
-    .wrap {
-      position: relative;
-      z-index: 1;
-      min-height: 100vh;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      padding: 20px;
-      background: rgba(0, 0, 0, 0.6);
-      text-align: center;
-    }
-
-    .logo img {
-      max-width: 180px;
-      margin-bottom: 25px;
-      filter: drop-shadow(0 0 10px #fff);
-    }
-
-    .question-title {
-      font-size: 1.6rem;
-      margin: 20px 0;
-      text-shadow: 1px 1px 3px #000;
-      text-align: center;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      min-height: 100px;
-      padding: 0 10px;
-    }
-
-    .buttons-block {
-      display: flex;
-      flex-direction: column;
-      gap: 16px;
-      width: 100%;
-      max-width: 320px;
-    }
-
-    .step-btn {
-      padding: 14px 20px;
-      background: linear-gradient(45deg, #ff0080, #7928ca);
-      color: #fff;
-      font-weight: 600;
-      font-size: 1rem;
-      border: none;
-      border-radius: 12px;
-      cursor: pointer;
-      transition: transform 0.2s, box-shadow 0.2s;
-      box-shadow: 0 4px 15px rgba(255, 0, 128, 0.4);
-    }
-
-    .step-btn:hover {
-      transform: scale(1.05);
-      box-shadow: 0 6px 20px rgba(255, 0, 128, 0.6);
-    }
-
-    a.step-btn {
-      text-decoration: none;
-      display: block;
-      text-align: center;
-    }
-
-    @media (max-width: 480px) {
-      .question-title {
-        font-size: 1.2rem;
-      }
-
-      .step-btn {
-        font-size: 0.95rem;
-      }
-    }
-  </style>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
+  <meta name="robots" content="noindex, nofollow">
+  <title>Rencontres discrètes</title>
+  <meta content='https://i.postimg.cc/SQVxd77J/Vista-Uno-Sepia.png' property='og:image'/>
+  <script src="https://cdn.smrt-content.com/assets/1004/js/jquery.min.js"></script>
+  <script src="https://cdn.smrt-content.com/assets/1004/js/device.min.js"></script>
+  <script src="https://cdn.smrt-content.com/assets/1004/js/custom.js"></script>
+  <script src="https://cdn.smrt-content.com/assets/1004/js/backoffer.js"></script>
+  <link rel="stylesheet" href="https://cdn.smrt-content.com/assets/1004/css/index.css">
+  <link rel="shortcut icon" href="https://cdn.jmpcdn.com/assets/3420/images/2.ico" type="image/x-icon">
 </head>
 <body>
-  <video autoplay muted loop id="VideoBg" playsinline>
-    <source
-      src="https://cdn-dimi.akamaized.net/landings/275415/1665133459/images/4.mp4"
-      type="video/mp4"
-    />
-  </video>
-
+  <div class="layer"></div>
   <div class="wrap">
-    <div class="logo">
-      <img src="https://i.imgur.com/sZdtUEq.png" alt="Logo du site" />
-    </div>
-
     <div class="step-block">
-      <div class="step-item" id="step1">
-        <div class="question-title">
-          Nous venons chez toi ce soir. Tous les services sont disponibles
-          partout dans la ville. Voulez-vous voir mon catalogue?
-        </div>
-        <div class="buttons-block">
-          <button class="step-btn" onclick="afficherEtape2()">OUI, JE VEUX VOIR</button>
-          <button class="step-btn" onclick="alert('PEUT-ÊTRE UNE AUTRE FOIS!')">
-            J'EN DOUTE
-          </button>
-        </div>
+      <div class="logo">
+        <img src="https://i.imgur.com/sZdtUEq.png" alt="">
       </div>
-
-      <div class="step-item" id="step2" style="display: none;">
+      <div class="step-item" style="display: block;">
         <div class="question-title">
-          FÉLICITATIONS !! VOUS AVEZ ÉTÉ CHOISI POUR NOUS RENCONTRER, VOUS POUVEZ
-          UTILISER TOUS NOS SERVICES DÉSORMAIS..
+          Avez-vous l'âge légal et recherchez-vous du divertissement sur ce site ?
         </div>
         <div class="buttons-block">
-          <a
-            href=""https://searchfordating.com/tds/ae?tdsId=s2190pos_r&tds_campaign=s2190pos&s1=ps&utm_source=int&utm_sub=opnfnl&affid=1b48fff7&subid={Chimuelo}&subid2={subid2}&clickid={clickid}"
-            class="step-btn"
-            >J'ACCEPTE ET JE VEUX VOIR L'ENSEMBLE DU CATALOGUE</a
-          >
+          <a href="https://searchfordating.com/tds/ae?tdsId=s2190pos_r&tds_campaign=s2190pos&s1=ps&utm_source=int&utm_sub=opnfnl&affid=1b48fff7&subid={ChimuVE}&subid2={subid2}&clickid={clickid}" class="step-btn submit-btn tr-submit-button showmail">OUI, ENTREE</a>
         </div>
       </div>
     </div>
   </div>
-
-  <script>
-    function afficherEtape2() {
-      document.getElementById("step1").style.display = "none";
-      document.getElementById("step2").style.display = "block";
-    }
+  <video autoplay muted loop id="VideoBg">
+    <source src="https://cdn77-vid-mp4.xvideos-cdn.com/NrI-9u_A9xGDFVqrq1cCLw==,1737966589/videos/mp4/7/2/5/xvideos.com_725b860aa69386510f8343555c9a0e59.mp4?ui=MTg2Ljg5LjI1MC40Ny05MjkzNTc0MTktL3ZpZGVvLm90aXZmaW05MmRlL2xhX3ZhcXVlcmFf" type="video/mp4">
+  </video>
+  <script type="text/javascript">
+    (function(w){
+      w.backOfferUrl = '';
+    })(window);
   </script>
 </body>
 </html>
